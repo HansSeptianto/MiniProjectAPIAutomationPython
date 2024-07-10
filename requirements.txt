@@ -3,3 +3,4 @@ assertpy
 requests
 Faker
 pytest-json-report
+pytest-html
