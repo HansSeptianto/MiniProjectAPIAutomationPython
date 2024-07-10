@@ -10,7 +10,6 @@ def notif_slack():
     json_content = open("report_all.json", "r").read()
     data_json = json.loads(json_content)
     time = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    print(time)
 
     try:
         test_passed = data_json.get("summary")["passed"]
