@@ -29,5 +29,5 @@ jobs:
         run: pytest test/ -v
 
       - name: Send Report Slack
-        run: python setting/notif_slack.py
+        run: python setting/slack_notification.py
 
