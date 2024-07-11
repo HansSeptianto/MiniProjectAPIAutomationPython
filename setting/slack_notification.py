@@ -29,7 +29,7 @@ def notif_slack():
     else:
         color = "#008000"
 
-    test_success_rate = (test_passed / test_total) * 100
+    test_success_rate = round((test_passed / test_total) * 100, 2)
 
     payload = {
         "attachments": [
