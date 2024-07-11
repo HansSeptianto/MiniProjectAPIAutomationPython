@@ -47,6 +47,7 @@ jobs:
         timeout-minutes: 20
 
       - name: Send Report Slack
+        if: always()
         run: python setting/slack_notification.py
         env:
           URL_NETLIFY: ${{ steps.deployment-netlify.outputs.deploy-url }}
