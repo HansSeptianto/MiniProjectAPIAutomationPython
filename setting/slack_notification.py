@@ -3,7 +3,7 @@ from datetime import datetime
 
 import requests
 
-from endpoint import WEBHOOK
+from endpoint import WEBHOOK, URL_NETLIFY
 
 
 def notif_slack():
@@ -86,7 +86,7 @@ def notif_slack():
                         "type": "section",
                         "text": {
                             "type": "mrkdwn",
-                            "text": "<https://google.com|Link Report Test>"
+                            "text": f"<{URL_NETLIFY}|Link Report Test>"
                         }
                     },
                     {

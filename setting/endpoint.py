@@ -16,3 +16,6 @@ TEST_RUN_QASE_IO = "1"
 
 # Slack
 WEBHOOK = os.environ.get("WEBHOOK_SLACK")
+
+# Netlify
+URL_NETLIFY = os.environ.get("URL_NETLIFY")

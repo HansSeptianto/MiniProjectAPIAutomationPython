@@ -49,6 +49,7 @@ jobs:
       - name: Send Report Slack
         run: python setting/slack_notification.py
         env:
+          URL_NETLIFY: ${{ steps.deployment-netlify.outputs.deploy-url }}
           WEBHOOK_SLACK: ${{ secrets.WEBHOOK_SLACK }}
 
 
