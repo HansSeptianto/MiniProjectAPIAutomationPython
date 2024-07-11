@@ -20,7 +20,7 @@ def notif_slack():
     except:
         test_failed = "0"
     try:
-        test_total = data_json.get("summary")["total"] = data_json.get("summary")["passed"]
+        test_total = data_json.get("summary")["total"] = data_json.get("summary")["total"]
     except:
         test_total = "0"
 
