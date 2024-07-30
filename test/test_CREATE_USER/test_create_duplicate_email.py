@@ -22,11 +22,12 @@ def test():
         "status": "active"
     }
     req = requests.post(api_user, headers=head, json=payload)
+    req2 = requests.post(api_user, headers=head, json=payload)
 
     # VALIDATION
-    status_code = req.status_code
-    resp_field = req.json()[0]["field"]
-    resp_message = req.json()[0]["message"]
+    status_code = req2.status_code
+    resp_field = req2.json()[0]["field"]
+    resp_message = req2.json()[0]["message"]
 
     # ASSERT
     assert_that(status_code).is_equal_to(422)
