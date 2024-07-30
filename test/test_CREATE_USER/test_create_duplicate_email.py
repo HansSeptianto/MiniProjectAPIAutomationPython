@@ -21,6 +21,7 @@ def test():
         "email": "pytest1@gmail.com",
         "status": "active"
     }
+
     req = requests.post(api_user, headers=head, json=payload)
     req2 = requests.post(api_user, headers=head, json=payload)
 
